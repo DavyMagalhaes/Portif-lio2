@@ -1,121 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    color: #F6F6F6; /* Define a cor do texto padrão para todos os elementos */
 }
 
 body {
-    background-color: rgb(62, 58, 58);
-    color: rgb(62, 58, 58);
-    /*height: 100vh;*/
-    font-family: Arial, sans-serif; 
-    margin: 0;
+    background-color: rgb(62, 58, 58); /* Define a cor de fundo do corpo */
+    /* height: 100vh; */ /* Altura do corpo comentada (não está em uso) */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo */
+    margin: 0; /* Remove a margem padrão do corpo */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura e altura dos elementos */
 }
 
 h1 {
-    color: white;
-    margin-bottom: 20px;
+    color: white; /* Define a cor do texto do h1 */
+    margin-bottom: 20px; /* Define a margem inferior do h1 */
 }
 
 h2 {
-    color: white;
-    font-size: 24px; 
-    margin-bottom: 10px; 
+    color: white; /* Define a cor do texto do h2 */
+    font-size: 24px; /* Define o tamanho da fonte do h2 */
+    margin-bottom: 10px; /* Define a margem inferior do h2 */
 }
 
 p {
-    color: white;
-    margin-bottom: 20px;
+    color: white; /* Define a cor do texto dos parágrafos */
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos */
 }
 
 .destaque_titulo {
-    color: #e60909;
+    color: #3e4aeb; /* Define a cor do texto com destaque */
 }
 
-.apresentacao {
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1000px; 
-    margin: 10px auto; 
+.apresentacao { /* main */
+    padding: 5% 15%; /* Define o preenchimento do contêiner principal */
+    display: flex; /* Usa o layout flexível */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    gap: 80px; /* Define o espaçamento entre os itens */
 }
 
+.apresentacao_texto { /* section coluna esquerda */
+    display: flex; /* Usa o layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    width: 50%; /* Define a largura da coluna */
+    gap: 40px; /* Define o espaço entre os itens dentro da coluna */
+}
 
 .apresentacao_links {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin-top: 20px; 
-    gap: 32px;
-    margin: 0 auto;
+    display: flex; /* Usa o layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Alinha os itens no centro horizontalmente */
+    margin-top: 20px; /* Define a margem superior */
+    gap: 32px; /* Define o espaço entre os itens */
+    margin: 0 auto; /* Define a margem automática para centralizar o contêiner */
 }
 
 .apresentacao_links_subtitulo {
-    font-family: 'Krona One', sans-serif; 
-    font-weight: 400;
-    font-size: 24px; 
-    color: #ade8f4; 
-    text-align: center; 
-    margin-bottom: 20px; 
+    font-family: 'Krona One', sans-serif; /* Define a fonte do subtítulo dos links */
+    font-weight: 400; /* Define o peso da fonte */
+    font-size: 24px; /* Define o tamanho da fonte */
 }
 
-.apresentacao_links_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: transparent; 
-    color: #F6F6F6; 
-    border: 2px solid #22D4FD; 
-    width: 378px; 
-    border-radius: 8px; 
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.apresentacao_links_link { /* a */
+    display: flex; /* Usa o layout flexível */
+    justify-content: center; /* Alinha o conteúdo no centro horizontalmente */
+    gap: 16px; /* Define o espaço entre o ícone e o texto */
+    border: 2px solid #070707; /* Define a borda do link */
+    background-color: #3e4aeb; /* Define a cor de fundo do link */
+    width: 378px; /* Define a largura do botão */
+    border-radius: 8px; /* Define o arredondamento das bordas */
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    padding: 21.5px 0; /* Define o preenchimento vertical do botão */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    color: #F6F6F6; /* Define a cor do texto do botão */
+    font-family: 'Channel', 'Channel'; /* Define a fonte do texto do botão */
+    text-align: center; /* Alinha o texto no centro do botão */
 }
 
 .apresentacao_links_link:hover {
-    cursor: pointer; 
-    background-color: #272727; 
-    color: #FFFFFF; 
+    background-color: #272727; /* Muda a cor de fundo quando o mouse passa sobre o botão */
+}
+
+.apresentacao_links_subtitulo:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do texto ao passar o mouse */
+    color: #3e4aeb; /* Muda a cor do texto ao passar o mouse */
 }
 
 footer {
-    background-color: #22D4FD;
-    color: #000000;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    padding: 24px;
-    margin: 20px auto; 
+    background-color: #3e4aeb; /* Define a cor de fundo do rodapé */
+    color: #000000; /* Define a cor do texto do rodapé */
+    text-align: center; /* Alinha o texto no centro do rodapé */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do texto do rodapé */
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    padding: 24px; /* Define o preenchimento do rodapé */
+    margin: 20px auto; /* Define a margem superior e inferior e centraliza o rodapé */
 }
 
-.cabecalho {
-    background-color: #22D4FD;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.cabecalho { /* header */
+    background-color: #3a46f1; /* Define a cor de fundo do cabeçalho */
+    color: #fff; /* Define a cor do texto do cabeçalho */
+    padding: 2% 0% 0% 15%; /* Define o preenchimento do cabeçalho */
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.menu { /* nav */
+    display: flex; /* Usa o layout flexível */
+    gap: 80px; /* Define o espaçamento entre os itens do menu */
 }
 
 .menu-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Remove o sublinhado do texto do link */
+    color: #fff; /* Define a cor do texto do link */
+    font-size: 18px; /* Define o tamanho da fonte do link */
+    padding: 10px 20px; /* Define o preenchimento do link */
+    border-radius: 5px; /* Define o arredondamento das bordas do link */
+    transition: background-color 0.3s, color 0.3s; /* Define a transição suave para a cor de fundo e a cor do texto */
 }
 
 .menu-link:hover {
-    background-color: #555;
-    color: #fff;
+    background-color: #555; /* Muda a cor de fundo quando o mouse passa sobre o link */
+    color: #fff; /* Define a cor do texto quando o mouse passa sobre o link */
+}
+
+@media (max-width: 1200px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao_texto{
+        width: auto;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .menu{
+    
+    }
 }
