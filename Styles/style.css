@@ -130,12 +130,45 @@ footer {
         padding: 5%;
     }
     .apresentacao_texto{
-        width: auto;
+        width: auto; /* O texto ocupa toda a largura automatica */
     }
     .cabecalho{
         padding: 10%;
     }
-    .menu{
-    
+}
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    .apresentacao {
+        margin: 5% 10%;
+        flex-direction: column; /* Coloca a imagem e o texto um embaixo do outro */
+        align-items: flex-start; /* Alinha os itens ao início */
+        width: 100%; /* Largura total da tela */
     }
+
+    .apresentacao_texto {
+        width: 100%; /* O texto ocupa toda a largura disponível */
+    }
+
+    .apresentacao_links_link {
+        width: 100%; /* Botão ocupa toda a largura da tela */
+        padding: 12px; /* Ajusta o padding */
+        font-size: 18px; /* Diminui o tamanho da fonte */
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    .apresentacao {
+        margin: 2% 5%;
+    }
+
+    .apresentacao_links_link {
+        font-size: 16px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
