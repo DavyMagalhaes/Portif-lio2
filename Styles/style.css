@@ -124,18 +124,6 @@ footer {
     color: #fff; /* Define a cor do texto quando o mouse passa sobre o link */
 }
 
-@media (max-width: 1200px){
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    .apresentacao_texto{
-        width: auto; /* O texto ocupa toda a largura automatica */
-    }
-    .cabecalho{
-        padding: 10%;
-    }
-}
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
     .apresentacao {
